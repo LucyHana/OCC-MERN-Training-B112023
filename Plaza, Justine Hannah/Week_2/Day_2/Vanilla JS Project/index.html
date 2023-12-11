@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="output">
+      <header>
+        <h1>Hana's Todo List</h1>
+      </header>
+      <form>
+        <input type="text" action="" class="todo-input" />
+        <button class="todo-button" type="submit">
+          <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="select">
+          <select name="todos" class="filter-todo">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="uncompleted">Uncompleted</option>
+          </select>
+        </div>
+      </form>
+      <div class="todo-container">
+        <ul class="todo-list"></ul>
+      </div>
+    </div>
+
+    <!-- THIS IS THE PRESENTATION -->
+
+    <div id="quick-links" class="even">
+      <h1>Quick Links</h1>
+      <div>
+        <a href="#opening">1. opening</a>
+        <a href="#ground-rules">2. ground-rules</a>
+        <a href="#agenda">3. agenda</a>
+        <a href="#html-overview">4. html-overview</a>
+        <a href="#css-styles">5. css-styles</a>
+        <a href="#javascript">6. javascript-functionality</a>
+        <a href="#summary">6. to remember</a>
+      </div>
+    </div>
+
+    <div id="opening" class="presentation odd">
+      <h1>Todo List Web Application</h1>
+      <div>
+        <h2>Techstack: HTML, CSS, JavaScript</h2>
+      </div>
+    </div>
+    <div id="ground-rules" class="presentation even">
+      <h1>Rules</h1>
+      <div class="guides">
+        <div class="rules">
+          <img src="img/2.png" width="6912" height="3456" />
+        </div>
+        <div class="rules">
+          <img src="img/3.png" width="6912" height="3456" />
+        </div>
+        <div class="rules">
+          <img src="img/4.png" width="6912" height="3456" />
+        </div>
+      </div>
+      </div>
+      
+    </div?>
+    <div id="agenda" class="presentation odd">
+      <h1>Agenda</h1>
+      <div>
+      <h2>Overview of the HTML Structure</h2>
+      <h2>Essential CSS Styles</h2>
+      <h2>JavaScript Functionality</h2>
+    </div>
+    </div>
+
+    <div id="html-overview" class="presentation even">
+      <h1>HTML Overview</h1>
+      <div>
+      <h2>Google Fonts</h2>
+      <h2>Font Awesome</h2>
+      <h2>Script Tag</h2>
+      <h2 class="skeleton">Header</h2>
+      <h2 class="skeleton">Form</h2>
+      <h2 class="skeleton">Todo List</h2>
+      <h2 class="skeleton">Filter Select</h2>
+      </div>
+    </div>
+    <div id="css-styles" class="presentation odd">
+      <h1>CSS Styles</h1>
+      <div>
+        <h2>Font Awesome Icons</h2>
+        <h2>.completed</h2>
+        <h2>.fall</h2>
+      </div>
+      
+    </div>
+    <div id="javascript" class="presentation even">
+      <h1>JavaScript Functionality</h1>
+      <div class="js-content">
+        <div class="js-group">
+          <h2>Terms</h2>
+          <h3>Function</h3>
+          <h4>performs a task</h4>
+          <h3>Variables</h3>
+          <h4>hold references to DOM elements or values</h4>
+          <h3>Array</h3>
+          <h4>data structure that stores elements</h4>
+          <h3>Methods</h3>
+          <h4>built-in functions</h4>
+          <h3>Conditional Statements</h3>
+          <h4>control the flow based on conditions</h4>
+          <h3>Loops</h3>
+          <h4>repeated executions</h4>
+          <h3>DOM Manipulation</h3>
+          <h4>methods for manipulating Document Object Model</h4>
+          <h3>Arguments</h3>
+          <h4>actual values or objects in a function</h4>
+          <h4>const result = addNumbers(5, 3)</h4>
+          <h3>Parameters</h3>
+          <h4>represent values or objects passed into the function</h4>
+          <h4>function addNumbers(a, b)</h4>
+        </div>
+        <div class="js-group">
+          <h2>Selectors</h2>
+          <h3>Single Element Selectors</h3>
+          <h4>document.querySelector(".todo-input")</h4>
+          <h3>Multiple Element Selectors</h3>
+          <h4>todoList.childNodes</h4>
+        </div>
+      
+        <div class="js-group">
+          <h2>Event Listeners</h2>
+          <h3>Load Event</h3>
+          <h4>document.addEventListener("DOMContentLoaded", getTodos)</h4>
+          <h3>Click Event</h3>
+          <h4>todoButton.addEventListener("click", addTodo)</h4>
+          <h4>todoList.addEventListener("click", deleteCheck)</h4>
+          <h4>filterOption.addEventListener("click", filterTodo)</h4>
+        </div>
+      
+        <div class="js-group">
+          <h2>Functions</h2>
+          <h3>add</h3>
+          <h3>localStorage</h3>
+          <h3>deleteCheck</h3>
+          <h3>remove</h3>
+          <h3>get</h3>
+          <h3>filter</h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="summary" class="presentation odd">
+      <h1>Summary</h1>
+      <div id="summ-content">
+        <div class="summ-group">
+          <h2>HTML Structure For Todo List</h2>
+          <h3>Header</h3>
+          <h3>Form</h3>
+          <h3>Todo List</h3>
+          <h3>Filter Select</h3>
+        </div>
+        <div class="summ-group">
+          <h2>CSS Styling</h2>
+          <h3>.fall</h3>
+          <h3>.completed</h3>
+        </div>
+        <div class="summ-group">
+          <h2>JavaScript Functionality</h2>
+          <h3>Event Listeners</h3>
+          <h3>Key Functions: adding, deleting, and filtering</h3>
+        </div>
+        <div class="summ-group">
+          <h2>Local Storage Usage</h2>
+          <h3>saving, retrieving, and removing</h3>
+        </div>
+      </div>
+      
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
